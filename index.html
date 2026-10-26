@@ -9,7 +9,25 @@
   </title>
 <style>
    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');:root{--navy:#101D30;--ink:#192C43;--sky:#37B9F1;--muted:#607389;--line:#e3ebf3;--paper:#f5f8fc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Sans KR',system-ui,sans-serif;line-height:1.75;word-break:keep-all}a{color:inherit;text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:0 24px}header{position:sticky;top:0;background:#fffefefa;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}header b{font-size:17px;letter-spacing:.01em}header span{color:#159bd6}.hero{padding:110px 0 105px;color:white;background:radial-gradient(ellipse at 88% 18%,#245579 0,transparent 55%),linear-gradient(125deg,#101D30,#172e47)}.eyebrow{color:#078bbf;font-weight:800;letter-spacing:.13em;font-size:12px}.hero .eyebrow,.footer .eyebrow{color:#69d0ff}h1{font-size:clamp(37px,5.8vw,65px);line-height:1.25;letter-spacing:-.055em;margin:22px 0 24px;font-weight:900}h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.05em;line-height:1.3;margin:10px 0 22px}h3{font-size:20px;margin:8px 0 12px}p{color:var(--muted);margin:0 0 15px}.hero p{color:#d4e2ee}.lead{font-size:18px;max-width:680px}.btn{display:inline-block;background:var(--sky);color:#08263a;font-weight:800;padding:13px 24px;border-radius:9px;margin-top:22px;box-shadow:0 12px 26px #0002}.section{padding:82px 0;border-top:1px solid var(--line)}.section:nth-of-type(even){background:white}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:30px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 24px #1d426009}.section:nth-of-type(even) .card{background:#f8fbfe}.card small{color:#078dbf;font-weight:800;letter-spacing:.06em}.card p{font-size:15px}.navcard{display:block;transition:transform .2s,border-color .2s}.navcard:hover{transform:translateY(-4px);border-color:var(--sky)}.tag{display:inline-block;border:1px solid #d4e5f0;padding:7px 14px;border-radius:30px;color:#087fac;font-size:13px;font-weight:700}.timeline{display:grid;gap:12px;margin-top:26px}.step{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:20px 24px;border-left:4px solid var(--sky);background:white;border-radius:0 12px 12px 0;box-shadow:0 5px 15px #1d426009}.step strong{color:#058abd}.step h3{margin-top:0}.step p{margin-bottom:0}.note{margin-top:22px;font-size:13px;color:#73889d}.footer{padding:76px 0;text-align:center;background:var(--navy);color:white}.footer p{color:#b5c8db}.footer .tag{border-color:#47617a;color:#a8e6ff}.hero h1 span{color:#66cfff!important}.section .wrap>p{max-width:780px}@media(max-width:560px){.hero{padding:83px 0}.section{padding:62px 0}.step{grid-template-columns:1fr;gap:2px}header b{font-size:14px}.wrap{padding:0 18px}.card{padding:21px}}
-  </style>
+  
+/* Daily class: interactive timeline */
+.daily-clock{font-size:14px;font-weight:800;color:var(--ink)!important;margin:14px 0 28px!important}
+.daily-progress{display:flex;gap:3px;height:11px;overflow:hidden;border-radius:20px;margin:22px 0 30px;background:#d5dce3}
+.daily-progress button{border:0;min-width:0;cursor:pointer;background:#b5bdc6;transition:background .2s}
+.daily-progress button[aria-pressed="true"]{background:var(--sky)}
+.daily-layout{display:grid;grid-template-columns:1.12fr 1fr;gap:26px;align-items:stretch}
+.daily-list{display:grid;gap:9px}
+.daily-step{display:flex;align-items:center;gap:17px;text-align:left;background:transparent;border:1.5px solid transparent;border-radius:15px;padding:13px 17px;cursor:pointer;color:var(--ink);font:inherit;transition:background .2s,border-color .2s}
+.daily-step:hover{background:#eaf5fd}.daily-step[aria-pressed="true"]{background:#fff;border-color:#5abfee;box-shadow:0 5px 16px #1d426010}
+.daily-number{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:50%;background:#e7edf3;font-size:13px;font-weight:900}
+.daily-step[aria-pressed="true"] .daily-number{background:#63c6f4;color:#08263a}
+.daily-step-text{flex:1;min-width:0}.daily-step-name{display:block;font-weight:800;font-size:15px}.daily-step-time{display:block;color:var(--muted);font-size:13px}.daily-step-min{font-size:13px;color:#087fac;font-weight:800;white-space:nowrap}
+.daily-detail{background:white;border:1px solid var(--line);border-radius:20px;padding:32px;min-height:360px;box-shadow:0 8px 24px #1d426009}
+.daily-detail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;color:#66788a;font-weight:800;font-size:12px;letter-spacing:.05em}
+.daily-pill{background:#63c6f4;color:#08263a;border-radius:30px;padding:5px 13px;letter-spacing:0}
+.daily-detail h3{font-size:25px;margin:25px 0 2px}.daily-detail .daily-time{color:#078bbf;font-size:14px;font-weight:800}.daily-detail h4{font-size:17px;margin:25px 0 14px}.daily-detail p{font-size:15px;line-height:1.9}
+@media(max-width:700px){.daily-layout{grid-template-columns:1fr;gap:18px}.daily-detail{min-height:250px;padding:24px}.daily-step{padding:10px 12px}.daily-step-name{font-size:14px}.daily-step-time{font-size:12px}}
+</style>
 </head>
 <body>
 <header>
@@ -140,7 +158,7 @@
 <section class="section" id="quarter"><div class="wrap"><div class="eyebrow">LEARNING ROADMAP</div><h2>단계별 교육과정</h2><p>도약·육상·투척의 기초부터 실전 완성까지, 월별 학습목표에 따라 단계적으로 발전하는 교육과정입니다.</p><div class="grid"><div class="card"><small>STEP 01 · 2–3월</small><h3>기본</h3><p>종목별 기본 원리 이해 및 기초 동작 습득</p></div><div class="card"><small>STEP 02 · 4–5월</small><h3>중급</h3><p>기술의 이해를 바탕으로 동작 숙련도 향상</p></div><div class="card"><small>STEP 03 · 6–7월</small><h3>고급</h3><p>심화 기술 습득 및 수행 능력 발전</p></div><div class="card"><small>STEP 04 · 8–10월</small><h3>정석</h3><p>기술의 완성도 향상 및 실전 수행력 강화</p></div></div><p class="note">※ 교육 진도는 학생의 수준과 입시 일정에 따라 탄력적으로 운영됩니다.</p></div></section>
 <section class="section" id="month"><div class="wrap"><div class="eyebrow">MONTHLY PLAN</div><h2>월간계획</h2><p>매월 명확한 학습목표를 설정하고, 단계별 교육과 측정·피드백을 통해 성장 과정을 관리합니다.</p><div class="grid"><div class="card"><small>WEEK 01</small><h3>학습목표 제시</h3><p>월별 교육 방향과 종목별 학습목표를 안내합니다.</p></div><div class="card"><small>MIDDLE WEEKS</small><h3>단계별 진도 교육</h3><p>도약·육상·투척의 월별 교육 진도에 따라 기술을 습득하고 수행 능력을 발전시킵니다.</p></div><div class="card"><small>FINAL WEEK</small><h3>측정 및 종목별 피드백</h3><p>종목별 측정으로 학습 성과를 확인하고 개인별 강점과 보완점을 점검합니다.</p></div></div><p class="note">목표 설정 → 진도 교육 → 측정 및 피드백의 흐름을 매월 반복합니다.</p></div></section>
 <section class="section" id="week"><div class="wrap"><div class="eyebrow">WEEKLY PLAN</div><h2>주간계획</h2><p>주 3회, 훈련 목적에 따른 프로그램 구성과 개인별 신체 특성을 고려한 맞춤형 트레이닝을 진행합니다.</p><div class="grid"><div class="card"><small>DAY 01 · PROGRAM 1</small><h3>전신 근력 강화</h3><p>전신 근력 발달과 운동 수행 능력 향상을 목표로 하는 웨이트트레이닝</p></div><div class="card"><small>DAY 02 · PROGRAM 2</small><h3>하체 근력 및 파워 강화</h3><p>하체 중심의 근력 발달과 폭발적인 힘 발휘 능력을 향상시키는 웨이트트레이닝</p></div><div class="card"><small>DAY 03 · CONDITIONING</small><h3>체력 강화 및 회복 관리</h3><p>업힐 트레이닝 또는 리커버리 유산소를 통한 체력 및 컨디션 관리</p></div></div><h3 style="margin-top:35px">개인별 맞춤 분반 시스템</h3><p>PROGRAM 1·2는 모두 학생의 신체적 특성과 훈련 필요성에 따라 분반 운영합니다.</p><div class="grid"><div class="card"><small>FUNCTIONAL</small><h3>펑셔널 프로그램</h3><p>기능적 움직임과 운동 수행 능력 향상</p></div><div class="card"><small>STABILIZATION</small><h3>안정화 프로그램</h3><p>신체 안정성과 움직임 조절 능력 향상</p></div></div></div></section>
-<section class="section" id="day"><div class="wrap"><div class="eyebrow">DAILY CLASS</div><h2>하루 160분의 수업</h2><p>워밍업부터 기술 교육, 체력 훈련, 정리운동까지 연결되는 일별 수업 흐름입니다.</p><div class="timeline"><div class="step"><strong>30분</strong><div><h3>01 · 워밍업</h3><p>체온 상승 · 가동성 확보 · 움직임 준비</p></div></div><div class="step"><strong>60분 · 20:10 종료</strong><div><h3>02 · 종목별 스킬수업</h3><p>수준별 기술 학습과 동작 교정</p></div></div><div class="step"><strong>10분</strong><div><h3>03 · 휴식</h3><p>회복과 다음 훈련 준비</p></div></div><div class="step"><strong>50분</strong><div><h3>04 · 트레이닝</h3><p>수업일에 따라 개인별 웨이트트레이닝 또는 유산소 트레이닝 진행</p></div></div><div class="step"><strong>10분</strong><div><h3>05 · 정리운동</h3><p>마무리와 컨디션 점검</p></div></div></div><p class="note">※ 학생의 상태와 수업 운영 상황에 따라 세부 내용은 조정될 수 있습니다.</p></div></section>
+<section class="section" id="day"><div class="wrap"><div class="eyebrow">DAILY CLASS</div><h2>하루 160분의 수업</h2><p>워밍업부터 정리운동까지, 다섯 단계의 수업을 선택해 상세 내용을 확인할 수 있습니다.</p><p class="daily-clock">◷  18:40–21:20 수업 기준</p><div aria-label="수업 시간 구성" class="daily-progress"></div><div class="daily-layout"><div aria-label="수업 단계 선택" class="daily-list"></div><div aria-live="polite" class="daily-detail"></div></div><p class="note">※ DAY 3에는 주간 운영 계획에 따라 업힐 또는 리커버리 유산소 트레이닝을 진행합니다. 학생의 상태와 운영 상황에 따라 세부 내용은 조정될 수 있습니다.</p></div></section>
 </main>
 <footer class="footer">
 <div class="wrap">
@@ -158,5 +176,28 @@
     </a>
 </div>
 </footer>
-</body>
+<script>
+const dailySteps=[
+ {name:'워밍업',time:'18:40–19:10',min:30,heading:'움직임을 준비하는 시간',desc:'체온 상승과 가동성 확보를 통해 본 수업에 필요한 신체 상태를 준비합니다.'},
+ {name:'종목별 스킬수업',time:'19:10–20:10',min:60,heading:'종목별 기술 습득과 완성',desc:'도약·육상·투척의 단계별 학습목표에 따라 기술을 익히고, 동작의 정확성과 수행 능력을 발전시킵니다.'},
+ {name:'휴식',time:'20:10–20:20',min:10,heading:'회복과 다음 수업 준비',desc:'수분을 보충하고 신체 상태를 점검하며 다음 훈련을 준비합니다.'},
+ {name:'웨이트트레이닝',time:'20:20–21:10',min:50,heading:'개인별 신체 특성을 고려한 맞춤형 훈련',desc:'학생의 신체적 특성과 훈련 목적에 따라 펑셔널·안정화 프로그램으로 분반하여 수업을 진행합니다. 주간 운영 계획에 따라 유산소 트레이닝으로 대체될 수 있습니다.'},
+ {name:'정리운동',time:'21:10–21:20',min:10,heading:'수업 마무리 및 회복',desc:'수업 후 신체 상태를 점검하고 회복을 위한 정리운동을 진행합니다.'}
+];
+let selectedDaily=1;
+const dailyList=document.querySelector('.daily-list');
+const dailyProgress=document.querySelector('.daily-progress');
+const dailyDetail=document.querySelector('.daily-detail');
+function renderDaily(){
+ dailyList.innerHTML='';dailyProgress.innerHTML='';
+ dailySteps.forEach((s,i)=>{
+  const btn=document.createElement('button');btn.type='button';btn.className='daily-step';btn.setAttribute('aria-pressed',String(i===selectedDaily));
+  btn.innerHTML=`<span class="daily-number">${i+1}</span><span class="daily-step-text"><span class="daily-step-name">${s.name}</span><span class="daily-step-time">${s.time}</span></span><span class="daily-step-min">${s.min}분</span>`;
+  btn.addEventListener('click',()=>{selectedDaily=i;renderDaily()});dailyList.appendChild(btn);
+  const bar=document.createElement('button');bar.type='button';bar.style.flex=String(s.min);bar.title=s.name;bar.setAttribute('aria-label',s.name);bar.setAttribute('aria-pressed',String(i===selectedDaily));bar.addEventListener('click',()=>{selectedDaily=i;renderDaily()});dailyProgress.appendChild(bar);
+ });
+ const s=dailySteps[selectedDaily];dailyDetail.innerHTML=`<div class="daily-detail-head"><span>STEP ${String(selectedDaily+1).padStart(2,'0')} / 05</span><span class="daily-pill">${s.min}분</span></div><h3>${s.name}</h3><div class="daily-time">${s.time}</div><h4>${s.heading}</h4><p>${s.desc}</p>`;
+}
+renderDaily();
+</script></body>
 </html>
