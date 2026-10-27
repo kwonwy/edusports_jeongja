@@ -264,11 +264,11 @@ const weekSelect=document.getElementById('preferredWeek');
 (function populateWeeks(){
  const now=new Date();const base=new Date(now.getFullYear(),now.getMonth(),now.getDate());
  const monday=new Date(base);monday.setDate(base.getDate()-(base.getDay()+6)%7);
- for(let i=0;i<9;i++){
+ for(let i=1;i<=9;i++){
   const d=new Date(monday);d.setDate(monday.getDate()+i*7);
   const e=new Date(d);e.setDate(d.getDate()+6);
   const fmt=x=>`${x.getFullYear()}.${String(x.getMonth()+1).padStart(2,'0')}.${String(x.getDate()).padStart(2,'0')}`;
-  const option=document.createElement('option');option.value=`${fmt(d)} ~ ${fmt(e)}`;option.textContent=`${i===0?'이번 주 · ':''}${fmt(d)} ~ ${fmt(e)}`;weekSelect.appendChild(option);
+  const option=document.createElement('option');option.value=`${fmt(d)} ~ ${fmt(e)}`;option.textContent=`${i===1?'다음 주 · ':''}${fmt(d)} ~ ${fmt(e)}`;weekSelect.appendChild(option);
  }
  const other=document.createElement('option');other.value='상담 후 결정';other.textContent='상담 후 결정';weekSelect.appendChild(other);
 })();
