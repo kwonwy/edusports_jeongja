@@ -50,151 +50,127 @@
 .weekly-branch{padding:5px 10px 5px 0}.weekly-branch svg{width:24px;height:24px;stroke:#158cd3;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .weekly-branch h4{margin:8px 0 1px;font-size:18px}.weekly-branch .branch-ko{font-size:13px;color:var(--muted);margin-bottom:3px}.weekly-branch p:last-child{font-size:14px;color:var(--ink);margin:0}
 @media(max-width:650px){.weekly-shell{padding:18px;border-radius:17px}.weekly-day{grid-template-columns:77px minmax(0,1fr);gap:8px}.weekly-day-marker{padding:12px 10px;border-radius:12px}.weekly-day-marker span{font-size:10px}.weekly-day-marker svg{width:23px;height:23px}.weekly-day-content{padding:13px;border-radius:12px}.weekly-day-head{align-items:flex-start;flex-wrap:wrap;gap:5px}.weekly-day-head strong{font-size:14px}.weekly-chip{font-size:10px;padding:3px 7px}.weekly-day-content h4{font-size:16px}.weekly-day-content p{font-size:12px}.weekly-branches{gap:12px}.weekly-branch h4{font-size:14px}.weekly-branch p:last-child{font-size:12px}}
+
+/* V5 integrated brand & curriculum design */
+.site-header .header-inner{max-width:1380px;gap:18px;flex-wrap:wrap}
+.site-header .brand{font-size:17px;font-weight:900;white-space:nowrap}
+.site-nav{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}
+.site-nav>a{font-size:12px;font-weight:800;padding:8px 11px;border-radius:25px;white-space:nowrap}
+.site-nav>a:hover,.site-nav>a.active{background:#101d30;color:#fff}
+.site-nav .trial-cta{background:#62c4f0!important;color:#08263a!important;padding:9px 17px!important}
+.hero-under{margin:13px 0 0!important;font-size:14px;color:#b9ddf0!important}
+.hierarchy{display:grid;gap:12px;margin-top:34px}
+.hierarchy-row{display:flex;align-items:center;gap:18px;border:1px solid #e0e6ec;border-radius:17px;background:#fff;min-height:86px;padding:18px 22px;margin-left:calc(var(--indent) * 7%);transition:border-color .2s,transform .2s}
+.hierarchy-row:hover{border-color:#37b9f1;transform:translateX(3px)}
+.hierarchy-id{color:#078bbf;font-weight:900;font-size:12px;width:100px;flex-shrink:0}
+.hierarchy-text{flex:1;display:grid;line-height:1.5}.hierarchy-text strong{font-size:17px}.hierarchy-text small{color:#64778b;font-size:13px}
+.hierarchy-arrow{font-size:29px;color:#078bbf}
+.annual-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.annual-card{background:#fff;border:1px solid #dfe5ec;border-radius:22px;padding:28px;display:flex;flex-direction:column}
+.annual-card h3{font-size:23px;line-height:1.45;margin:8px 0 10px}.annual-divider{color:#5fc7f6;margin:0 6px}
+.annual-card>p{font-size:14px;line-height:1.85}
+.annual-points{display:grid;gap:10px;margin:12px 0 22px}
+.annual-point{display:flex;align-items:flex-start;gap:12px;border-radius:16px;padding:15px;background:#f5f9fc}
+.annual-num{flex-shrink:0;display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#62c4f0;color:#072c43;font-weight:900}
+.annual-point strong{color:#078bbf;font-size:15px}.annual-point p{font-size:13px;margin:4px 0 0}
+.annual-summary{margin-top:auto;border-left:3px solid #62c4f0;padding:10px 14px;font-size:13px;font-weight:800}
+.annual-dark{background:#0c1016;color:#fff;border-color:#0c1016}
+.annual-dark h3,.annual-dark .annual-point strong{color:#fff}
+.annual-dark>p,.annual-dark .annual-point p{color:#c4d2df}
+.annual-dark .annual-point{background:#22262c}
+.annual-dark .eyebrow{color:#62c4f0}
+.roadmap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.roadmap-card{color:#fff;border-radius:20px;padding:22px;min-height:255px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.roadmap-card:not(:last-child):after{content:"›";position:absolute;right:-17px;top:46%;color:#0e83bd;font-size:30px;font-weight:900;z-index:2}
+.roadmap-1{background:#254967}.roadmap-2{background:#17658e}.roadmap-3{background:#1689b9}.roadmap-4{background:#36b9f1;color:#08263a}
+.roadmap-top{display:flex;justify-content:space-between;gap:5px}.roadmap-top b{font-size:30px}.roadmap-top span{font-size:12px;font-weight:800}
+.roadmap-card small{font-size:11px;letter-spacing:.06em;font-weight:800;opacity:.9}.roadmap-card h3{font-size:28px;margin:4px 0 8px}
+.roadmap-card p{font-size:13px;line-height:1.7;color:inherit;margin:0;opacity:.92}
+.roadmap-caption{font-size:14px;color:#087fac;font-weight:800;text-align:center;margin-top:20px}
+.monthly-shell{background:#fff;border:1px solid #e0e7ee;border-radius:22px;padding:30px;margin-top:28px}
+.monthly-title{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.monthly-title h3{font-size:24px;margin:0 0 5px}.monthly-title p{font-size:14px;margin:0}
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+.metric-card{border:1px solid #e2e7ed;border-radius:17px;padding:17px 14px}
+.metric-title{display:flex;justify-content:space-between;gap:6px;font-size:13px;margin-bottom:16px}.metric-title strong{color:#078bbf}
+.metric-row{display:flex;align-items:center;gap:8px;font-size:12px;margin-top:8px;white-space:nowrap}
+.metric-row>b{color:#078bbf;min-width:24px;text-align:right}
+.metric-bars{display:flex;gap:3px;flex:1}.metric-bars i{height:9px;flex:1;background:#e0e4e8;border-radius:9px}.metric-bars i.filled{background:#62c4f0}
+.subheading{color:#087fac;margin-top:0}
+.example-stats,.example-subjects{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.example-stat{padding:20px;border:1px solid #e1e7ed;border-radius:17px;background:#fff;display:grid;gap:5px}
+.example-stat small{color:#6d7d8c}.example-stat strong{color:#087fac;font-size:16px}
+.example-subject{background:#fff;border:1px solid #dfe5ec;border-radius:18px;padding:21px;min-width:0}
+.subject-pill{background:#62c4f0;border-radius:20px;padding:4px 10px;color:#072c43;font-size:11px;font-weight:900}
+.example-subject h4{font-size:19px;margin:15px 0}
+.example-detail{border-top:1px solid #e7ebef;padding:14px 0;display:grid;gap:6px}
+.example-detail small{font-size:12px;font-weight:800;color:#078bbf}
+.example-detail strong{font-size:13px;line-height:1.6}
+.example-featured{background:#eaf7fe;border-color:#9ad8f5}
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:26px}
+.flow-card{border:1px solid #e2e7ed;background:#fff;border-radius:17px;padding:20px;position:relative}
+.flow-card:not(:last-child):after{content:"→";position:absolute;right:-24px;top:43%;color:#078bbf;font-size:23px}
+.flow-card small{color:#078bbf;font-weight:900}.flow-card h4{font-size:16px;margin:12px 0 8px}.flow-card p{font-size:13px;margin:0}
+.flow-foot{margin-top:22px;padding:23px;background:#fff;border-radius:16px}.flow-foot p{font-size:13px;margin:5px 0 0}
+.detail-panel{margin-top:28px;border:1px solid #e0e6ec;border-radius:22px;padding:30px;background:#fff}
+.detail-panel h3{font-size:27px}.detail-panel>p{max-width:750px}
+.skill-list{list-style:none;padding:0;display:grid;gap:10px;max-width:690px;margin:24px 0 0 auto}
+.skill-list li{display:flex;align-items:center;gap:14px;padding:12px 15px;background:#f5f9fc;border-radius:14px}
+.skill-list li>span{background:#62c4f0;border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-weight:900;color:#08263a;flex-shrink:0}
+.skill-list li strong{flex:1}.skill-list li small{color:#607389}
+.reinforce-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.reinforce-card{padding:22px;background:#f6f9fc;border-radius:16px;position:relative}
+.reinforce-card:not(:last-child):after{content:"→";position:absolute;right:-16px;top:40%;z-index:2;color:#078bbf;font-size:23px}
+.reinforce-card small,.weight-card small,.beginner-box small{color:#078bbf;font-weight:800}
+.reinforce-card h4{font-size:18px;margin:10px 0 0}.reinforce-card.highlight{background:#62c4f0}
+.reinforce-card.highlight small{color:#074a6d}.reinforce-card.highlight p{color:#164d68;font-size:12px}
+.weight-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.weight-card{background:#f5f9fc;border-radius:18px;padding:23px}.weight-card h4{font-size:20px;margin:10px 0}
+.weight-card p{font-size:14px}
+.mini-process{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:15px 0}
+.mini-process span{padding:8px 10px;background:#fff;border-radius:10px;font-size:12px;font-weight:800}
+.mini-process b{color:#078bbf}
+.beginner-box{border:1px dashed #78c8f2;border-radius:16px;padding:22px;margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.beginner-box h4{font-size:19px;margin:5px 0}.beginner-box p{margin:0;font-size:14px}
+@media(max-width:1000px){.site-nav{justify-content:flex-start}.roadmap-grid,.metrics-grid,.example-stats,.example-subjects,.flow-grid{grid-template-columns:repeat(2,1fr)}.roadmap-card:not(:last-child):after,.flow-card:not(:last-child):after{display:none}}
+@media(max-width:700px){.annual-grid,.weight-grid,.reinforce-grid{grid-template-columns:1fr}.site-header .header-inner{padding-top:11px;padding-bottom:11px}.site-nav{width:100%;flex-wrap:nowrap;overflow-x:auto;padding-bottom:3px}.site-nav>a{flex-shrink:0}.hierarchy-row{margin-left:calc(var(--indent) * 2%);padding:13px 12px;gap:9px}.hierarchy-id{width:72px;font-size:10px}.hierarchy-text strong{font-size:14px}.hierarchy-text small{font-size:11px}.annual-card,.detail-panel{padding:20px}.roadmap-card{min-height:200px;padding:17px}.roadmap-card h3{font-size:23px}.monthly-shell{padding:18px}.flow-grid{gap:12px}.reinforce-card:not(:last-child):after{display:none}.skill-list li small{display:none}}
+@media(max-width:420px){.metrics-grid,.example-stats,.example-subjects,.flow-grid{grid-template-columns:1fr}.roadmap-grid{gap:9px}.roadmap-card{padding:13px}.roadmap-card p{font-size:11px}.roadmap-top b{font-size:24px}}
 </style>
 </head>
 <body>
-<header>
-<div class="wrap">
-<b>
-     EDUSPORTS
-     <span>
-      JEONGJA
-     </span>
-</b>
-<a class="tag" href="#plan">
-     수업 체계 보기 ↓
-    </a>
-</div>
-</header>
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="#top">에듀스포츠 <span>정자 본원</span></a>
+<nav class="site-nav" aria-label="수업 과정 바로가기">
+<a href="#plan">전체 구조</a><a href="#year">연간계획</a><a href="#quarter">교육과정</a><a href="#month">월간계획</a><a href="#week">주간계획</a><a href="#day">하루 수업</a>
+<a class="trial-cta" href="#trial">체험수업 신청하기</a>
+</nav></div></header>
 <main>
-<section class="hero">
-<div class="wrap">
-<div class="eyebrow">
-      PERFORMANCE TRAINING SYSTEM · JEONGJA
-     </div>
-<h1>
-      성장은 우연이 아닌,
-      <br/>
-<span>
-       설계의 결과.
-      </span>
-</h1>
-<p class="lead">
-      연간 목표부터 매일의 훈련까지. 에듀스포츠 정자점의 체계적인 수업 운영 시스템을 소개합니다.
-     </p>
-<a class="btn" href="#plan">
-      수업 과정 살펴보기
-     </a>
-</div>
-</section>
-<section class="section" id="plan">
-<div class="wrap">
-<div class="eyebrow">
-      PLAN HIERARCHY
-     </div>
-<h2>
-      연간계획에서 하루 수업까지
-     </h2>
-<p>연간 운영 방향에서 단계별 교육과정, 월간 목표와 매일의 수업까지 연결합니다.</p>
-<div class="grid">
-<a class="card navcard" href="#year">
-<small>
-        01 · YEAR
-       </small>
-<h3>
-        연간계획
-       </h3>
-<p>
-        시즌 전 / 시즌기
-       </p>
-</a>
-<a class="card navcard" href="#quarter">
-<small>02 · ROADMAP</small>
-<h3>단계별 교육과정</h3>
-<p>기본부터 정석까지</p>
-</a>
-<a class="card navcard" href="#month">
-<small>
-        03 · MONTH
-       </small>
-<h3>
-        월간계획
-       </h3>
-<p>목표 설정 · 진도 교육 · 측정 피드백</p>
-</a>
-<a class="card navcard" href="#week">
-<small>
-        04 · WEEK
-       </small>
-<h3>
-        주간계획
-       </h3>
-<p>주 3회 맞춤형 트레이닝</p>
-</a>
-<a class="card navcard" href="#day">
-<small>
-        05 · DAY
-       </small>
-<h3>
-        일별 수업
-       </h3>
-<p>160분 수업 운영</p>
-</a>
-</div>
-</div>
-</section>
-<section class="section" id="year">
-<div class="wrap">
-<div class="eyebrow">
-      ANNUAL PLAN
-     </div>
-<h2>
-      연간계획
-     </h2>
-<p>
-      입시까지 남은 기간에 따라 능력을 기르는 시기와 실전에서 발휘하는 시기를 구분합니다.
-     </p>
-<div class="grid">
-<div class="card">
-<small>
-        PRE-SEASON
-       </small>
-<h3>
-        시즌 전
-       </h3>
-<p>
-        기초근력 → 최대근력 → 파워·스피드 전환
-       </p>
-</div>
-<div class="card">
-<small>
-        IN-SEASON
-       </small>
-<h3>
-        시즌기
-       </h3>
-<p>대학별 실기 세부 관리 · 체계적인 훈련 주기화 · 시험 일정에 맞춘 컨디셔닝</p>
-</div>
-</div>
-</div>
-</section>
-<section class="section" id="quarter"><div class="wrap"><div class="eyebrow">LEARNING ROADMAP</div><h2>단계별 교육과정</h2><p>도약·육상·투척의 기초부터 실전 완성까지, 월별 학습목표에 따라 단계적으로 발전하는 교육과정입니다.</p><div class="grid"><div class="card"><small>STEP 01 · 2–3월</small><h3>기본</h3><p>종목별 기본 원리 이해 및 기초 동작 습득</p></div><div class="card"><small>STEP 02 · 4–5월</small><h3>중급</h3><p>기술의 이해를 바탕으로 동작 숙련도 향상</p></div><div class="card"><small>STEP 03 · 6–7월</small><h3>고급</h3><p>심화 기술 습득 및 수행 능력 발전</p></div><div class="card"><small>STEP 04 · 8–10월</small><h3>정석</h3><p>기술의 완성도 향상 및 실전 수행력 강화</p></div></div><p class="note">※ 교육 진도는 학생의 수준과 입시 일정에 따라 탄력적으로 운영됩니다.</p></div></section>
-<section class="section" id="month"><div class="wrap"><div class="eyebrow">MONTHLY PLAN</div><h2>월간계획</h2><p>매월 명확한 학습목표를 설정하고, 단계별 교육과 측정·피드백을 통해 성장 과정을 관리합니다.</p><div class="grid"><div class="card"><small>WEEK 01</small><h3>학습목표 제시</h3><p>월별 교육 방향과 종목별 학습목표를 안내합니다.</p></div><div class="card"><small>MIDDLE WEEKS</small><h3>단계별 진도 교육</h3><p>도약·육상·투척의 월별 교육 진도에 따라 기술을 습득하고 수행 능력을 발전시킵니다.</p></div><div class="card"><small>FINAL WEEK</small><h3>측정 및 종목별 피드백</h3><p>종목별 측정으로 학습 성과를 확인하고 개인별 강점과 보완점을 점검합니다.</p></div></div><p class="note">목표 설정 → 진도 교육 → 측정 및 피드백의 흐름을 매월 반복합니다.</p></div></section>
-<section class="section" id="week">
+<section class="hero" id="top"><div class="wrap">
+<div class="eyebrow">체대입시 수업 운영 시스템</div>
+<h1>합격은 우연이 아닌,<br><span>전략적 설계의 결과.</span></h1>
+<p class="lead">꿈을 향한 공동체, 에듀스포츠</p>
+<a class="btn" href="#plan">수업 과정 살펴보기 ↓</a>
+<p class="hero-under">◷ 하루 160분, 체계적으로 설계된 수업</p>
+</div></section>
+<section class="section" id="plan"><div class="wrap"><div class="eyebrow">PLAN HIERARCHY</div><h2>연간계획에서 하루 수업까지</h2><p>하나의 목표를 향해, 연간계획부터 매일의 160분까지 체계적으로 연결합니다.</p><div class="hierarchy"><a class="hierarchy-row" href="#year" style="--indent:0"><span class="hierarchy-id">01 · YEAR</span><span class="hierarchy-text"><strong>연간계획</strong><small>시즌 전 / 시즌기</small></span><span class="hierarchy-arrow">›</span></a><a class="hierarchy-row" href="#quarter" style="--indent:1"><span class="hierarchy-id">02 · ROADMAP</span><span class="hierarchy-text"><strong>단계별 교육과정</strong><small>기본부터 정석까지</small></span><span class="hierarchy-arrow">›</span></a><a class="hierarchy-row" href="#month" style="--indent:2"><span class="hierarchy-id">03 · MONTH</span><span class="hierarchy-text"><strong>월간계획</strong><small>목표 설정 · 진도 교육 · 측정 피드백</small></span><span class="hierarchy-arrow">›</span></a><a class="hierarchy-row" href="#week" style="--indent:3"><span class="hierarchy-id">04 · WEEK</span><span class="hierarchy-text"><strong>주간계획</strong><small>주 3회 맞춤형 트레이닝</small></span><span class="hierarchy-arrow">›</span></a><a class="hierarchy-row" href="#day" style="--indent:4"><span class="hierarchy-id">05 · DAY</span><span class="hierarchy-text"><strong>일별 수업</strong><small>하루 160분 수업 운영</small></span><span class="hierarchy-arrow">›</span></a></div></div></section>
+<section class="section" id="year"><div class="wrap"><div class="eyebrow">ANNUAL PLAN</div><h2>연간계획</h2><p>입시까지 남은 기간을 기준으로, 능력을 기르는 시기와 실전에서 발휘하는 시기를 나누어 설계합니다.</p><div class="annual-grid"><article class="annual-card "><div class="eyebrow">PRE-SEASON</div><h3>시즌 전<span class="annual-divider">│</span>힘을 만들고, 실기 능력으로 전환하는 기간</h3><p>기초근력부터 최대근력, 파워와 스피드까지 훈련 목표를 단계적으로 발전시킵니다. 앞 단계에서 기른 능력을 다음 단계의 기반으로 삼아 실기에 필요한 힘과 속도로 연결합니다.</p><div class="annual-points"><div class="annual-point"><span class="annual-num">1</span><div><strong>기초근력</strong><p>근비대 및 근신경 활성화를 통해 훈련의 기반을 만들고, 힘을 발휘하는 움직임을 익힙니다.</p></div></div><div class="annual-point"><span class="annual-num">2</span><div><strong>최대근력</strong><p>스트렝스 훈련으로 더 큰 힘을 발휘할 수 있는 능력을 높입니다.</p></div></div><div class="annual-point"><span class="annual-num">3</span><div><strong>파워·스피드 전환</strong><p>기른 힘을 빠르게 발휘하며 점프·달리기·던지기에 필요한 운동능력으로 연결합니다.</p></div></div></div><div class="annual-summary">블록별 목표에 따라 힘을 기르고, 빠른 움직임으로 전환합니다.</div></article><article class="annual-card annual-dark"><div class="eyebrow">IN-SEASON</div><h3>시즌기<span class="annual-divider">│</span>대학별 실기와 시험 컨디션을 완성하는 기간</h3><p>지원 대학의 실기종목과 측정방식에 맞춰 세부 동작과 수행 과정을 관리합니다. 주기화 프로그램으로 훈련 강도와 운동량을 조절하며 준비한 능력을 시험장에서 발휘하도록 컨디셔닝을 진행합니다.</p><div class="annual-points"><div class="annual-point"><span class="annual-num">1</span><div><strong>대학별 실기 세부 관리</strong><p>지원 대학의 종목별 규정과 측정 방식에 맞춰 기술을 다듬고 실전 수행의 완성도를 높입니다.</p></div></div><div class="annual-point"><span class="annual-num">2</span><div><strong>주기화 프로그램</strong><p>학생의 상태와 실기 일정에 따라 훈련 강도와 운동량을 조절하며, 훈련 자극과 회복을 관리합니다.</p></div></div><div class="annual-point"><span class="annual-num">3</span><div><strong>시험 일정에 맞춘 컨디셔닝</strong><p>여러 대학의 실기 일정과 누적 피로를 고려해, 시험을 준비하는 몸 상태를 관리합니다.</p></div></div></div><div class="annual-summary">대학별 실기를 세밀하게 준비하고, 시험 일정에 맞춰 컨디션을 조절합니다.</div></article></div></div></section>
+<section class="section" id="quarter"><div class="wrap"><div class="eyebrow">LEARNING ROADMAP</div><h2>단계별 교육과정</h2><p>도약·육상·투척의 기초부터 실전 완성까지, 월별 학습목표에 따라 단계적으로 발전하는 교육과정입니다.</p><div class="roadmap-grid"><div class="roadmap-card roadmap-1"><div class="roadmap-top"><b>01</b><span>2–3월</span></div><div><small>FOUNDATION</small><h3>기본</h3><p>종목별 기본 원리 이해 및 기초 동작 습득</p></div></div><div class="roadmap-card roadmap-2"><div class="roadmap-top"><b>02</b><span>4–5월</span></div><div><small>DEVELOPMENT</small><h3>중급</h3><p>기술의 이해를 바탕으로 동작 숙련도 향상</p></div></div><div class="roadmap-card roadmap-3"><div class="roadmap-top"><b>03</b><span>6–7월</span></div><div><small>ADVANCED</small><h3>고급</h3><p>심화 기술 습득 및 수행 능력 발전</p></div></div><div class="roadmap-card roadmap-4"><div class="roadmap-top"><b>04</b><span>8–10월</span></div><div><small>MASTERY</small><h3>정석</h3><p>기술의 완성도 향상 및 실전 수행력 강화</p></div></div></div><div class="roadmap-caption">기초 습득 → 숙련도 향상 → 심화 기술 → 실전 완성</div><p class="note">※ 교육 진도는 학생의 수준과 입시 일정에 따라 탄력적으로 운영됩니다.</p></div></section>
+<section class="section" id="month"><div class="wrap"><div class="eyebrow">MONTHLY PLAN</div><h2>월간계획</h2><p>매월 명확한 학습목표를 설정하고, 단계별 교육과 측정·피드백을 통해 성장 과정을 체계적으로 관리합니다.</p><div class="monthly-shell"><div class="monthly-title"><div><h3>4주 교육 및 훈련 운영</h3><p>목표 설정에서 진도 교육, 측정까지 주차별 흐름을 설계합니다.</p></div><span class="tag">월간 운영 예시</span></div><div class="metrics-grid"><article class="metric-card"><div class="metric-title"><strong>1주차</strong><b>목표 설정</b></div><div class="metric-row">강도 <span class="metric-bars"><i class="filled"></i><i class=""></i><i class=""></i></span> <b>중</b></div><div class="metric-row">볼륨 <span class="metric-bars"><i class="filled"></i><i class=""></i><i class=""></i></span> <b>중</b></div></article><article class="metric-card"><div class="metric-title"><strong>2주차</strong><b>진도 교육</b></div><div class="metric-row">강도 <span class="metric-bars"><i class="filled"></i><i class="filled"></i><i class=""></i></span> <b>상</b></div><div class="metric-row">볼륨 <span class="metric-bars"><i class="filled"></i><i class="filled"></i><i class=""></i></span> <b>상</b></div></article><article class="metric-card"><div class="metric-title"><strong>3주차</strong><b>진도 교육</b></div><div class="metric-row">강도 <span class="metric-bars"><i class="filled"></i><i class="filled"></i><i class="filled"></i></span> <b>최상</b></div><div class="metric-row">볼륨 <span class="metric-bars"><i class="filled"></i><i class="filled"></i><i class="filled"></i></span> <b>최상</b></div></article><article class="metric-card"><div class="metric-title"><strong>4주차</strong><b>측정기</b></div><div class="metric-row">강도 <span class="metric-bars"><i class="filled"></i><i class="filled"></i><i class=""></i></span> <b>상</b></div><div class="metric-row">볼륨 <span class="metric-bars"><i class="filled"></i><i class=""></i><i class=""></i></span> <b>중</b></div></article></div><p class="note">※ 강도와 볼륨은 상대적인 훈련 수준이며, 학생의 상태와 시험 일정에 따라 조정됩니다.</p></div></div></section>
+<section class="section" id="month-example"><div class="wrap"><div class="eyebrow">MONTHLY PLAN EXAMPLE</div><h2>이렇게 한 달의 수업을 설계합니다</h2><h3 class="subheading">수업계획 예시</h3><p>시즌기 파워·스피드 및 대학별 실기 적용</p><span class="tag">실제 확정 시간표가 아닌 수업계획 예시입니다</span><div class="example-stats"><div class="example-stat"><small>훈련 시기</small><strong>시즌기</strong></div><div class="example-stat"><small>웨이트트레이닝 목표</small><strong>파워·스피드 발휘</strong></div><div class="example-stat"><small>실기 목표</small><strong>대학별 적용·약점 보완</strong></div><div class="example-stat"><small>운영 단위</small><strong>4주 계획</strong></div></div><div class="example-subjects"><article class="example-subject "><span class="subject-pill">도약</span><h4>제자리멀리뛰기</h4><div class="example-detail"><small>이번 달 목표</small><strong>착지 동작을 실전 수행으로 연결</strong></div><div class="example-detail"><small>기술수업</small><strong>공중동작에서 착지까지의 연결 학습</strong></div><div class="example-detail"><small>연결 보강</small><strong>착지 드릴·부분동작 반복 연습</strong></div></article><article class="example-subject "><span class="subject-pill">주력</span><h4>왕복달리기</h4><div class="example-detail"><small>이번 달 목표</small><strong>방향전환 동작과 대학별 측정방식 적용</strong></div><div class="example-detail"><small>기술수업</small><strong>감속·방향전환·재가속 동작 학습</strong></div><div class="example-detail"><small>연결 보강</small><strong>방향전환 구간별 반복 연습</strong></div></article><article class="example-subject "><span class="subject-pill">투척</span><h4>메디신볼던지기</h4><div class="example-detail"><small>이번 달 목표</small><strong>하체부터 상체까지 연결되는 투척</strong></div><div class="example-detail"><small>기술수업</small><strong>전신 연결·투척 리듬·투사각 학습</strong></div><div class="example-detail"><small>연결 보강</small><strong>부분동작 연습·투척 리듬 연결 드릴</strong></div></article><article class="example-subject example-featured"><span class="subject-pill">웨이트트레이닝</span><h4>종목 수업과 별도로 진행</h4><div class="example-detail"><small>이번 달 목표</small><strong>기른 힘을 파워와 스피드로 발휘</strong></div><div class="example-detail"><small>훈련 구성</small><strong>스트렝스 유지·하체 및 전신 파워·점프와 반응성</strong></div><div class="example-detail"><small>훈련 조절</small><strong>시험 일정과 컨디션에 맞춘 주기화 프로그램</strong></div></article></div></div></section><section class="section" id="month-flow"><div class="wrap"><div class="monthly-shell"><div class="eyebrow">MONTHLY FLOW</div><h3>점검하고, 배우고, 적용하고, 다시 확인합니다</h3><p>매월 학습목표에 따라 교육과 측정, 피드백을 연결하는 수업 운영 흐름입니다.</p><div class="flow-grid"><div class="flow-card"><small>1주차</small><h4>측정·동작 점검</h4><p>현재 기록과 움직임을 확인하고 보완 과제를 설정합니다.</p></div><div class="flow-card"><small>2주차</small><h4>기술 학습·연결 보강</h4><p>수준별 진도에 맞춰 기술을 배우고 관련 동작을 보강합니다.</p></div><div class="flow-card"><small>3주차</small><h4>실전 수행·약점 보완</h4><p>배운 기술을 전체 동작에 적용하며 남은 과제를 보완합니다.</p></div><div class="flow-card"><small>4주차</small><h4>대학별 적용·재점검</h4><p>대학별 방식으로 수행을 확인하고 다음 계획에 반영합니다.</p></div></div></div><div class="flow-foot"><strong>월간 목표부터 종목별 진도와 연결 보강까지, 하나의 계획으로 준비합니다.</strong><p>학생의 기술 습득 수준과 시험 일정에 따라 진도와 훈련량은 조정됩니다.</p></div></div></section><section class="section" id="week">
 <div class="wrap">
 <div class="eyebrow">WEEKLY TRAINING SYSTEM</div>
 <h2>주간계획</h2>
-<p>주 3회, 훈련 목적에 따른 체계적인 프로그램 구성과 개인별 신체 특성을 고려한 맞춤형 트레이닝을 진행합니다.</p>
+<p>주 3회, 훈련 목적에 따른 체계적인 프로그램 구성과 개인별 신체발달 특성을 고려한 맞춤형 트레이닝을 진행합니다.</p>
 <div class="weekly-shell">
 <div class="weekly-days">
-<div class="weekly-day"><div class="weekly-day-marker"><span>DAY 01</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9v6m3-9v12m3-8v4m8-4v4m3-8v12m3-9v6M5 12h14"/></svg></div><div class="weekly-day-content"><div class="weekly-day-head"><strong>PROGRAM 1</strong><span class="weekly-chip">웨이트트레이닝</span></div><h4>전신 근력 강화</h4><p>전신 근력 발달을 중심으로 기초적인 힘과 운동 수행 능력을 향상시키는 프로그램</p></div></div>
-<div class="weekly-day"><div class="weekly-day-marker"><span>DAY 02</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 13h7l-1 9 10-13h-7l1-7Z"/></svg></div><div class="weekly-day-content"><div class="weekly-day-head"><strong>PROGRAM 2</strong><span class="weekly-chip">웨이트트레이닝</span></div><h4>하체 근력 및 파워 강화</h4><p>하체 중심의 근력 발달과 폭발적인 힘 발휘 능력을 향상시키는 프로그램</p></div></div>
-<div class="weekly-day"><div class="weekly-day-marker"><span>DAY 03</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m6 13 3-3 3 5 3-7 3 3"/></svg></div><div class="weekly-day-content"><div class="weekly-day-head"><strong>CONDITIONING</strong><span class="weekly-chip">유산소 트레이닝</span></div><h4>체력 강화 및 회복 관리</h4><p>업힐 트레이닝 또는 리커버리 유산소를 통해 체력 향상과 컨디션 관리를 진행하는 프로그램</p></div></div>
+<div class="weekly-day"><div class="weekly-day-marker"><span>P01</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9v6m3-9v12m3-8v4m8-4v4m3-8v12m3-9v6M5 12h14"/></svg></div><div class="weekly-day-content"><div class="weekly-day-head"><strong>TOTAL BODY STRENGTH</strong><span class="weekly-chip">웨이트트레이닝</span></div><h4>전신 근력 강화</h4><p>전신 근력 발달을 중심으로 기초적인 힘과 운동 수행 능력을 향상시키는 프로그램</p></div></div>
+<div class="weekly-day"><div class="weekly-day-marker"><span>P02</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 13h7l-1 9 10-13h-7l1-7Z"/></svg></div><div class="weekly-day-content"><div class="weekly-day-head"><strong>LOWER BODY POWER</strong><span class="weekly-chip">웨이트트레이닝</span></div><h4>하체 근력 및 파워 강화</h4><p>하체 중심의 근력 발달과 폭발적인 힘 발휘 능력을 향상시키는 프로그램</p></div></div>
+<div class="weekly-day"><div class="weekly-day-marker"><span>P03</span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m6 13 3-3 3 5 3-7 3 3"/></svg></div><div class="weekly-day-content"><div class="weekly-day-head"><strong>CONDITIONING</strong><span class="weekly-chip">유산소 트레이닝</span></div><h4>체력 강화 및 회복 관리</h4><p>업힐 트레이닝 또는 리커버리 유산소를 통해 체력 향상과 컨디션 관리를 진행하는 프로그램</p></div></div>
 </div>
 <div class="weekly-divider"></div>
 <div class="eyebrow">INDIVIDUALIZED WEIGHT TRAINING</div>
 <h3>개인별 맞춤 분반 시스템</h3>
-<p class="weekly-branch-intro">PROGRAM 1·2는 모두 학생의 신체적 특성과 훈련 필요성에 따라 두 가지 프로그램으로 나누어 운영합니다.</p>
+<p class="weekly-branch-intro">P01·P02는 학생 개개인의 신체발달 특성과 훈련 필요성을 고려하여 펑셔널·안정화 프로그램으로 분반 운영합니다.</p>
 <div class="weekly-branches">
 <div class="weekly-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m13 2-9 11h7l-1 9 10-13h-7l1-7Z"/></svg><h4>FUNCTIONAL</h4><p class="branch-ko">펑셔널 프로그램</p><p>기능적 움직임과 운동 수행 능력 향상</p></div>
 <div class="weekly-branch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3 8 8 11 5-3 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><h4>STABILIZATION</h4><p class="branch-ko">안정화 프로그램</p><p>신체 안정성과 움직임 조절 능력 향상</p></div>
@@ -202,18 +178,21 @@
 </div>
 </div>
 </section>
-<section class="section" id="day"><div class="wrap"><div class="eyebrow">DAILY CLASS</div><h2>하루 160분의 수업</h2><p>워밍업부터 정리운동까지, 다섯 단계의 수업을 선택해 상세 내용을 확인할 수 있습니다.</p><p class="daily-clock">◷  18:40–21:20 수업 기준</p><div aria-label="수업 시간 구성" class="daily-progress"></div><div class="daily-layout"><div aria-label="수업 단계 선택" class="daily-list"></div><div aria-live="polite" class="daily-detail"></div></div><p class="note">※ DAY 3에는 주간 운영 계획에 따라 업힐 또는 리커버리 유산소 트레이닝을 진행합니다. 학생의 상태와 운영 상황에 따라 세부 내용은 조정될 수 있습니다.</p></div></section>
-</main>
+<section class="section" id="day"><div class="wrap"><div class="eyebrow">DAILY CLASS</div><h2>하루 160분의 수업</h2><p>워밍업부터 정리운동까지, 다섯 단계의 수업을 선택해 상세 내용을 확인할 수 있습니다.</p><p class="daily-clock">◷  18:40–21:20 수업 기준</p><div aria-label="수업 시간 구성" class="daily-progress"></div><div class="daily-layout"><div aria-label="수업 단계 선택" class="daily-list"></div><div aria-live="polite" class="daily-detail"></div></div><p class="note">※ P03 프로그램에는 주간 운영 계획에 따라 업힐 또는 리커버리 유산소 트레이닝을 진행합니다. 학생의 상태와 운영 상황에 따라 세부 내용은 조정될 수 있습니다.</p></div></section>
+<section class="section" id="daily-detail"><div class="wrap"><div class="eyebrow">SKILL × REINFORCEMENT</div><h2>배운 기술을 몸에 익히는 연결 훈련</h2><p>학생의 기술 습득 수준에 맞춰 단계별로 실기 기술을 배우고, 당일 배운 동작에 필요한 보강훈련을 연계합니다.</p>
+<div class="detail-panel"><div class="eyebrow">STEP 01 · 단계별 기술수업</div><h3>기술은 단계별로 배웁니다</h3><p>학생의 동작 이해도와 수행 수준을 확인하며 다음 단계로 진행합니다.</p><span class="tag">제자리멀리뛰기 진도 예시</span><ol class="skill-list"><li><span>1</span><strong>도약기초</strong><small>다음 단계 →</small></li><li><span>2</span><strong>도약보강</strong><small>다음 단계 →</small></li><li><span>3</span><strong>제자리멀리뛰기 기초동작</strong><small>다음 단계 →</small></li><li><span>4</span><strong>도약동작 메커니즘</strong><small>다음 단계 →</small></li><li><span>5</span><strong>공중동작 메커니즘</strong><small>다음 단계 →</small></li><li><span>6</span><strong>착지 메커니즘</strong><small>기술 연결 완성</small></li></ol></div>
+<div class="detail-panel"><div class="eyebrow">STEP 02 · 배운 기술에 맞춘 종목별 보강훈련</div><h3>배운 기술에 맞춰 보강합니다</h3><p>당일 기술수업의 목표에 맞춰 필요한 움직임을 보강합니다. 보강운동은 학생의 수행 수준과 보완할 부분에 따라 선택합니다.</p><div class="reinforce-grid"><div class="reinforce-card"><small>오늘의 기술</small><h4>도약동작 메커니즘</h4></div><div class="reinforce-card"><small>보강할 움직임</small><h4>하체 파워를 극대화하는 팔 타이밍 연습</h4></div><div class="reinforce-card highlight"><small>연결 보강훈련 (예시)</small><h4>복합점프</h4><p>학생에 따라 선택되는 한 가지 예시</p></div></div><p class="note">※ 연결 보강훈련은 60분 종목별 스킬수업에 포함되며, 별도의 수업 시간이 추가되지 않습니다.</p></div>
+<div class="detail-panel"><div class="eyebrow">STEP 03 · WEIGHT TRAINING · 50분</div><h3>같은 목표, 각자에게 맞는 훈련</h3><p>개인별 중량과 훈련 볼륨을 기록하고, 주차별 목표에 맞는 비율을 적용하여 훈련 강도와 운동량을 관리합니다.</p><div class="weight-grid"><div class="weight-card"><small>01 · TRAINING LOAD</small><h4>개인별 중량·볼륨 데이터 기록</h4><p>실제 수행한 운동 중량과 운동량을 기록하고, 주차별 목표에 맞춰 훈련 강도를 설정합니다.</p><div class="mini-process"><span>중량·볼륨 기록</span><b>→</b><span>주차별 목표 비율 적용</span><b>→</b><span>훈련 부하 조절</span></div><p class="note">※ 1RM 측정값을 기준으로 운영하는 방식이 아닙니다.</p></div><div class="weight-card"><small>02 · INDIVIDUALIZED TRAINING</small><h4>신체발달 특성에 맞춘 프로그램</h4><p>개인별 수행 수준과 신체발달 특성을 고려해 훈련 구성을 조절하며, 기능적 움직임과 안정화 능력을 함께 관리합니다.</p><div class="mini-process"><span>수행 수준 확인</span><b>→</b><span>훈련 목표 설정</span><b>→</b><span>결과에 따라 조절</span></div></div></div><div class="beginner-box"><div><small>BEGINNER PROGRAM</small><h4>초보자는 기초부터</h4><p>본 프로그램의 수행이 어려운 학생은 별도의 기초 베이스 훈련으로 준비한 뒤 본 프로그램에 연결합니다.</p></div><div class="mini-process"><span>기초 베이스 훈련</span><b>→</b><span>준비 수준 확인</span><b>→</b><span>본 프로그램 연결</span></div></div></div></div></section><section class="section" id="trial"><div class="wrap"><div class="eyebrow">FREE TRIAL</div><h2>체험수업 신청하기</h2><p>정자 본원 전용 신청 페이지는 준비 중입니다. 신청서 제출 기능이 연결되면 이곳에서 바로 신청하실 수 있습니다.</p><span class="tag">신청 페이지 준비 중</span></div></section></main>
 <footer class="footer">
 <div class="wrap">
 <div class="eyebrow">
-     EDUSPORTS JEONGJA
+     에듀스포츠 정자 본원
     </div>
 <h2>
      현재의 기록에서, 다음 단계로.
     </h2>
 <p>
-     에듀스포츠 정자점 · 체대입시 수업 운영 시스템
+     에듀스포츠 정자 본원 · 체대입시 수업 운영 시스템
     </p>
 <a class="tag" href="#">
      맨 위로 ↑
@@ -225,7 +204,7 @@ const dailySteps=[
  {name:'워밍업',time:'18:40–19:10',min:30,heading:'움직임을 준비하는 시간',desc:'체온 상승과 가동성 확보를 통해 본 수업에 필요한 신체 상태를 준비합니다.'},
  {name:'종목별 스킬수업',time:'19:10–20:10',min:60,heading:'종목별 기술 습득과 완성',desc:'도약·육상·투척의 단계별 학습목표에 따라 기술을 익히고, 동작의 정확성과 수행 능력을 발전시킵니다.'},
  {name:'휴식',time:'20:10–20:20',min:10,heading:'회복과 다음 수업 준비',desc:'수분을 보충하고 신체 상태를 점검하며 다음 훈련을 준비합니다.'},
- {name:'웨이트트레이닝',time:'20:20–21:10',min:50,heading:'개인별 신체 특성을 고려한 맞춤형 훈련',desc:'학생의 신체적 특성과 훈련 목적에 따라 펑셔널·안정화 프로그램으로 분반하여 수업을 진행합니다. 주간 운영 계획에 따라 유산소 트레이닝으로 대체될 수 있습니다.'},
+ {name:'웨이트트레이닝',time:'20:20–21:10',min:50,heading:'개인별 신체발달 특성을 고려한 맞춤형 훈련',desc:'학생의 신체발달 특성과 훈련 목적에 따라 펑셔널·안정화 프로그램으로 분반하여 수업을 진행합니다. 주간 운영 계획에 따라 유산소 트레이닝으로 대체될 수 있습니다.'},
  {name:'정리운동',time:'21:10–21:20',min:10,heading:'수업 마무리 및 회복',desc:'수업 후 신체 상태를 점검하고 회복을 위한 정리운동을 진행합니다.'}
 ];
 let selectedDaily=1;
@@ -243,5 +222,14 @@ function renderDaily(){
  const s=dailySteps[selectedDaily];dailyDetail.innerHTML=`<div class="daily-detail-head"><span>STEP ${String(selectedDaily+1).padStart(2,'0')} / 05</span><span class="daily-pill">${s.min}분</span></div><h3>${s.name}</h3><div class="daily-time">${s.time}</div><h4>${s.heading}</h4><p>${s.desc}</p>`;
 }
 renderDaily();
+const navLinks=[...document.querySelectorAll('.site-nav a[href^="#"]')].filter(a=>a.getAttribute('href')!=='#trial');
+const watchedSections=navLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+if('IntersectionObserver' in window){
+const observer=new IntersectionObserver(entries=>{
+  const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+  if(visible){navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+visible.target.id));}
+},{rootMargin:'-25% 0px -55% 0px',threshold:[0,.1,.4]});
+watchedSections.forEach(el=>observer.observe(el));
+}
 </script></body>
 </html>
